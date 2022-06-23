@@ -1,0 +1,18 @@
+<div class="container">
+  <form>
+    <div class="mb-3">
+      <label for="numero1" class="form-label">Numero 1</label>
+      <input type="number" class="form-control" id="numero1" name="numero1" [(ngModel)]="numero1">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="numero2" class="form-label">Password</label>
+      <input type="number" class="form-control" id="numero2" name="numero2" [(ngModel)]="numero2">
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="resultado">Resultado</label>
+      <input type="number" class="form-control" id="resultado" value={{resultado}} readonly>
+    </div>
+    <button type="button" class="btn btn-primary" (click)="calcularSuma()">Calcular Suma</button>
+  </form>
+</div>
